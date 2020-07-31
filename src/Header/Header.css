@@ -4,9 +4,41 @@ Nafis Khan Chowdhury
 Best-Buddy Website
 Date - 07/30/2020
 Time - 9:27 PM
-/*
+*/
 
 
 
 
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+
+.logo h1{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.navbar{
+    background-color: aquamarine;
+    height: 50px;
+    text-align: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background-color: lightgray;
+}

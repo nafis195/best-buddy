@@ -27,7 +27,10 @@ const Friend = (props) => {
                 <h4><FontAwesomeIcon icon={faPhone}/> Phone: {phone}</h4>
                 <h4><FontAwesomeIcon icon={faHouseUser}/> Company: {company}</h4>
                 <h4><FontAwesomeIcon icon={faMoneyCheckAlt}/> Salary: ${salary}</h4>
-                <button><FontAwesomeIcon icon={faHeart}/> Add to favorite</button>
+                <button
+                    onClick={() => props.handleAddFriend(props.people)}>
+                        <FontAwesomeIcon icon={faHeart}/> Add to favorite
+                </button>
             </div>
         </div>
     );

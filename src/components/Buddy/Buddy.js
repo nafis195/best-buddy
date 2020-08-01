@@ -15,16 +15,25 @@ import Summary from '../Summary/Summary';
 import fakedata from '../../fakedata/users'
 
 const Buddy = () => {
-    const users = fakedata.slice(0, 10);
+    const users = fakedata.slice(0, 15);
     const [people, setPeople] = useState(users);
+    const [summary, setSummary] = useState([]);
+
+    const handleAddFriend = (people) =>{
+        const newSummary = [...summary, people];
+        setSummary(newSummary);
+    }
 
     return (
         <div className="buddy">
             <div className="friend-container">
-                {people.map(people => <Friend people={people}></Friend>)}
+                {people.map(people => <Friend 
+                    handleAddFriend={handleAddFriend}
+                    people={people}
+                    ></Friend>)}
             </div>
             <div className="summary-container">
-                <Summary></Summary>
+                <Summary summary={summary}></Summary>
             </div>
         </div>
     );

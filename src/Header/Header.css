@@ -28,7 +28,7 @@ Time - 9:27 PM
 
 .navbar{
     background-color: aquamarine;
-    height: 50px;
+    height: 70px;
     text-align: center;
 }
 
@@ -41,4 +41,11 @@ Time - 9:27 PM
 
 nav a:hover{
     background-color: lightgray;
+}
+
+nav input{
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }

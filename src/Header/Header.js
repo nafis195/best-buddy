@@ -22,9 +22,14 @@ const Header = () => {
             </div>
             <div className="navbar">
                 <nav>
-                    <a href="/home">Home</a>
-                    <a href="/manage">Manage Friend</a>
-                    <a href="/review">Review Friend</a>
+                    <div className="anchor-text">
+                        <a href="/home">Home</a>
+                        <a href="/manage">Manage Friend</a>
+                        <a href="/review">Review Friend</a>
+                    </div>
+                    <div className="search-box">
+                        <input type="text" placeholder="type here to search" />
+                    </div>
                 </nav>
             </div>
         </div>

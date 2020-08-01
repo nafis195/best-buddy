@@ -10,3 +10,26 @@ Time - 3:07 PM
 
 
 
+.friend{
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightgray;
+}
+
+.friend img{
+    height: 300px;
+    width: 300px;
+}
+
+.friend-info{
+    margin-left: 50px;
+}
+
+.friend-info button{
+    background-color: darkcyan;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+}
